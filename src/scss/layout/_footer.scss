@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+    min-height: 80px;
+    background-color: #D8E9D6;
+
+    p {
+        text-align: center;
+    }
+}

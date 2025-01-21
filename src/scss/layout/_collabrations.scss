@@ -1,0 +1,30 @@
+#collabrations {
+    padding: 24px 90px;
+    display: flex;
+    justify-content: center;
+
+    #content {
+        min-height: 300px;
+        padding: 24px 0;
+        background-color: #CDE1CA;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .card {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #collabrations {
+        padding: 36px 5px;
+        #content {
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}

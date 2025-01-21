@@ -1,0 +1,119 @@
+#adminpanel {
+    #page-content {
+        min-height: 100vh;
+        padding: 24px 20px;
+    }
+
+    #form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+
+        form {
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            max-width: 400px;
+            gap: 6px;
+
+            input {
+                padding: 8px 4px;
+                background-color: #DBE9DB;
+                border: none;
+                outline: none;
+                border-radius: 2px;
+            }
+
+            button {
+                background-color: #ABD373;
+                border: none;
+                padding: 8px 0;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 600;
+                border-radius: 5px;
+                border: 1px solid #ABD373;
+                transition: all ease .3s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #ABD373;
+                }
+            }
+        }
+    }
+
+    #functions {
+        padding: 24px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        #sorting {
+            display: flex;
+            gap: 8px;
+
+            button {
+                background-color: #222;
+                color: white;
+                padding: 8px 24px;
+                border: none;
+                border-radius: 5px;
+                border: 1px solid black;
+                transition: all ease .3s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+        
+        #search {
+            padding: 24px 0;
+
+            input {
+                width: 200px;
+                padding: 8px 5px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid #9c9c9c;
+
+            }
+        }
+
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+        margin-top: 32px;
+        border-collapse: collapse;
+
+        tr {
+            img {
+                width: 80px;
+            }
+
+            button {
+                background-color: #C90000;
+                border: none;
+                padding: 4px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+
+        }
+    }
+}

@@ -1,0 +1,141 @@
+header {
+    #stripe {
+        background-color: rgb(171, 211, 115);
+        width: 100%;
+        padding: 20px 60px;
+        display: flex;
+        color: white;
+
+        #left {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #right {
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+
+            .settings {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+            }
+        }
+    }
+
+    #main {
+        padding: 24px 60px;
+
+        #top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #phone-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                gap: 8px;
+                flex: 1;
+
+                #phone {
+                    background-color: #ABD373;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                }
+
+                p {
+                    color: #525252;
+                    font-size: 18px;
+                }
+            }
+
+            #logo {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+
+                img {
+                    max-width: 120px;
+                    margin-bottom: 14px;
+                }
+            }
+
+            #pages {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                gap: 12px;
+
+                #bars {
+                    display: none;
+                }
+            }
+        }
+
+        #bottom {
+            padding: 24px 0;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                gap: 36px;
+                
+                a {
+                    font-size: 14px;
+                    color: #4c4c4c;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        #main {
+            #top {
+                #phone-wrapper {
+                    display: none;
+                }
+
+                #logo {
+                    justify-content: start;
+                }
+
+                #pages {
+                    #bars {
+                        display: block;
+                    }
+                }
+            }
+
+            #bottom {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    header {
+        #stripe {
+            display: none;
+        }
+
+        #main {
+            padding: 24px 20px;
+        }
+    }
+}

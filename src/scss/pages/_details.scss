@@ -1,0 +1,17 @@
+#details {
+    background-color: #ABD373;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #222;
+
+    button {
+        padding: 12px 24px;
+        border-radius: 15px;
+        border: none;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+}
